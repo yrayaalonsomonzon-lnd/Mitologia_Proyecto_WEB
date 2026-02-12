@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon del sitio -->
+    <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon">
+    <!-- CSS -->
+    <link rel="stylesheet" href=".css/estilo.css">
+    <title>Mundo de las Mitologias</title>
+</head>
+
+<body>
+    <!-- CABECERA DE LA PÁGINA -->
+    <header>
+        <h1 class="titulo-principal">Mundo de las Mitologias</h1>
+        <!-- Logo del sitio -->
+        <div class="logo-header">
+            <img src="/img/favicon.png" alt="Logo Mundo de las Mitologias">
+        </div>
+        <!-- Íconos de las principales mitologías -->
+        <div class="iconos-header">
+            <div class="icono icono-griego" title="Mitologia Griega"></div>
+            <div class="icono icono-nordico" title="Mitologia Nordica"></div>
+            <div class="icono icono-egipcio" title="Mitologia Egipcia"></div>
+        </div>
+        <!-- Barra de navegación principal -->
+        <nav class="navbar">
+            <ul>
+                <!-- Enlace activo: página de inicio -->
+                <li><a href="index.html" class="activo">Inicio</a></li>
+                <li><a href="griega/griega.html">Mitologia Griega</a></li>
+                <li><a href="nordica/nordica.html">Mitologia Nordica</a></li>
+                <li><a href="egipcia/egipcia.html">Mitologia Egipcia</a></li>
+                <li><a href="contacto/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL DE LA WEB -->
+    <main>
+        <!-- Sección de bienvenida/principal -->
+        <div class="principal">
+            <h2>Bienvenidos al mundo de las Mitologias</h2>
+            <p>Descubre las creencias, dioses y leyendas de las antiguas civilizaciones.</p>
+            <p>Explora los mitos de Grecia, el norte y el antiguo Egipto.</p>
+        </div>
+
+        <!-- Sección de tarjetas de mitologías -->
+        <div class="tarjetas">
+            <!-- Tarjeta: Mitología Griega -->
+            <div class="tarjeta">
+                <h3>Mitologia Griega</h3>
+                <div class="tarjeta-img tarjeta-griega"></div>
+                <p>Dioses del Olimpo y sus Mitos</p>
+                <a href="/griega/griega.html" class="btn">Ver mas</a>
+            </div>
+            <!-- Tarjeta: Mitología Nórdica -->
+            <div class="tarjeta">
+                <h3>Mitologia Nordica</h3>
+                <div class="tarjeta-img tarjeta-nordica"></div>
+                <p>Odin, Thor y el arbol Yggdrasil</p>
+                <a href="/nordica/nordica.html" class="btn">Ver mas</a>
+            </div>
+            <!-- Tarjeta: Mitología Egipcia -->
+            <div class="tarjeta">
+                <h3>Mitologia Egipcia</h3>
+                <div class="tarjeta-img tarjeta-egipcia"></div>
+                <p>Ra, Anubis y el mas alla</p>
+                <a href="/egipcia/egipcia.html" class="btn">Ver mas</a>
+            </div>
+        </div>
+
+        <!-- Video-banner -->
+        <video width="1030" height="260" autoplay muted loop playsinline style="pointer-events: none;">
+            <source src="video/banner-video.mp4" type="video/mp4">
+            <!-- Mensaje alternativo si no se puede reproducir el video -->
+            Tu navegador no soporta el formato de video
+        </video>
+
+        <!-- Sección de contacto -->
+        <div class="contacto-preview">
+            <h2>Contacto</h2>
+            <p>Envianos tus preguntas o comentarios</p>
+            <form class="formulario-contacto" action="#">
+                <!-- Campo: Nombre -->
+                <div
+                    style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <!-- Campo: Email -->
+                <div
+                    style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <!-- Campo: Mensaje -->
+                <div
+                    style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                </div>
+                <!-- Botón para enviar -->
+                <button type="submit" class="btn btn-enviar">Enviar</button>
+            </form>
+        </div>
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="footer">
+        <p>&copy; Mundo de las Mitologias - Proyecto WEB</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,387 @@
+/* Reset de estilos globales */
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+/* Fuentes personalizadas del proyecto Descargadas de https://www.dafont.com/es/ */
+@font-face {
+     font-family: 'A_mano_regular_old';
+     src: url('../font/amanoregulold/AManoRegulold.woff2') format('woff2');
+}
+
+@font-face {
+     font-family: 'Stranger_Things';
+     src: url('../font/stranger_things/StrangerThings-Regular.woff2') format('woff2');
+}
+
+/* Estilos generales del body */
+body {
+     font-family: 'A_mano_regular_old';
+     /* Fuente custom */
+     background: #1a1612;
+     /* Fondo oscuro */
+     color: #e8e4df;
+     /* Texto claro */
+     line-height: 1.6;
+     /* Espaciado entre líneas */
+}
+
+/* Cabecera del sitio */
+header {
+     background: #2d2620;
+     padding: 24px 32px;
+     text-align: center;
+     /* Sombra para separar visualmente el header */
+     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+}
+
+/* Logo principal en el header */
+.logo-header {
+     position: absolute;
+     top: 24px;
+     left: 32px;
+}
+
+.logo-header img {
+     width: 100px;
+     height: 100px;
+     border-radius: 20%;
+     /* Bordes redondeados */
+}
+
+/* Título grande del proyecto */
+.titulo-principal {
+     font-family: 'Stranger_Things';
+     font-size: 35px;
+     color: #c9a227;
+}
+
+/* Iconos de mitologías en cabecera */
+.iconos-header {
+     display: flex;
+     justify-content: center;
+     gap: 48px;
+     margin: 16px 0 24px;
+}
+
+/* Decoración base de iconos */
+.icono {
+     width: 60px;
+     height: 60px;
+     border: 2px solid #c9a227;
+     border-radius: 8px;
+     background-size: contain;
+     background-repeat: no-repeat;
+     background-position: center;
+}
+
+/* Efecto hover sobre iconos */
+.icono:hover {
+     box-shadow: 0 8px 20px rgba(201, 162, 39, 0.2);
+}
+
+/* Imágenes específicas por tipo de mitología */
+.icono-griego {
+     background-image: url('../img/griego.png');
+}
+
+.icono-nordico {
+     background-image: url('../img/nordico.png');
+}
+
+.icono-egipcio {
+     background-image: url('../img/egipcio.png');
+}
+
+/* Menú de navegación principal */
+.navbar {
+     /* Línea decorativa superior */
+     border-top: 2px solid #c9a227;
+     padding-top: 16px;
+}
+
+.navbar ul {
+     display: flex;
+     list-style: none;
+     justify-content: center;
+     gap: 8px;
+}
+
+.navbar a {
+     color: #e8e4df;
+     text-decoration: none;
+     padding: 8px 16px;
+     margin: 0 3px;
+     border: 1px solid transparent;
+     transition: all 0.3s ease;
+}
+
+/* Efecto hover en los enlaces del navbar */
+.navbar a:hover {
+     color: #e6c44a;
+     border-color: #c9a227;
+}
+
+/* Resalta la página activa en el navbar */
+.navbar a.activo {
+     color: #c9a227;
+     font-weight: bold;
+     border-bottom: 2px solid #c9a227;
+}
+
+/* Sección principal (página de inicio) */
+.principal {
+     max-width: 900px;
+     margin: 48px auto;
+     padding: 32px;
+     text-align: center;
+}
+
+.principal h2 {
+     font-family: 'Stranger_Things', Impact, sans-serif;
+     font-size: 29px;
+     color: #c9a227;
+     margin-bottom: 16px;
+}
+
+.principal p {
+     color: #e8e4df;
+     font-size: 18px;
+}
+
+/* Imagen decorativa (página contacto) */
+.img-hermes {
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+     border-radius: 6px;
+}
+
+/* Tarjetas de mitologías generales */
+.tarjetas {
+     display: flex;
+     gap: 32px;
+     max-width: 1100px;
+     margin: 0 auto 48px;
+     padding: 0 32px;
+}
+
+/* Tarjeta individual */
+.tarjeta {
+     flex: 1 1 280px;
+     background: #2d2620;
+     border: 2px solid #c9a227;
+     border-radius: 8px;
+     padding: 24px;
+     text-align: center;
+     transition: all 0.3s ease;
+}
+
+/* Efecto hover en la tarjeta */
+.tarjeta:hover {
+     box-shadow: 0 8px 20px rgba(201, 162, 39, 0.2);
+}
+
+.tarjeta h3 {
+     color: #c9a227;
+     margin-bottom: 16px;
+     font-size: 21px;
+}
+
+/* Imagen dentro de la tarjeta */
+.tarjeta-img {
+     height: 180px;
+     margin: 16px 0;
+     border-radius: 6px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     color: #8a8278;
+}
+
+/* Imágenes distintas por tarjeta */
+.tarjeta-griega {
+     background-image: url(../img/Griega.png);
+     background-size: contain;
+     background-repeat: no-repeat;
+     background-position: center;
+     border: 2px solid #c9a227;
+     border-radius: 8px;
+}
+
+.tarjeta-nordica {
+     background-image: url(../img/Nordica.png);
+     background-size: contain;
+     background-repeat: no-repeat;
+     background-position: center;
+     border: 2px solid #c9a227;
+     border-radius: 8px;
+}
+
+.tarjeta-egipcia {
+     background-image: url(../img/Egipcia.png);
+     background-size: contain;
+     background-repeat: no-repeat;
+     background-position: center;
+     border: 2px solid #c9a227;
+     border-radius: 8px;
+}
+
+.tarjeta p {
+     margin: 16px 0;
+     color: #e8e4df;
+}
+
+/* Video-banner principal */
+video {
+     max-width: 100%;
+     height: auto;
+     display: block;
+     margin: 0 auto 24px auto;
+     border-radius: 8px;
+     box-shadow: 0 4px 18px rgba(201, 162, 39, 0.15);
+}
+
+/* Sección Contacto general (background y layout) */
+.contacto-preview {
+     max-width: 600px;
+     margin: 48px auto;
+     padding: 32px;
+     background: #2d2620;
+     border-radius: 8px;
+     border: 1px solid #c9a227;
+}
+
+/* Sombra al pasar el mouse por la tarjeta de contacto */
+.contacto-preview:hover {
+     box-shadow: 0 8px 20px rgba(201, 162, 39, 0.2);
+}
+
+.contacto-preview h2 {
+     color: #c9a227;
+     margin-bottom: 8px;
+}
+
+.contacto-preview p {
+     margin-bottom: 24px;
+}
+
+/* Formulario de contacto */
+.formulario-contacto {
+     margin-bottom: 16px;
+}
+
+/* Etiquetas de los campos */
+.formulario-contacto label {
+     display: block;
+     margin-bottom: 5px;
+     color: #c9a227;
+}
+
+/* Campos de entrada y área de texto */
+.formulario-contacto input,
+.formulario-contacto textarea {
+     width: 100%;
+     padding: 10px;
+     background: #1a1612;
+     border: 2px solid #c9a227;
+     border-radius: 4px;
+     color: #e8e4df;
+     font-family: inherit;
+}
+
+/* Efecto de foco: resalta el borde */
+.formulario-contacto input:focus,
+.formulario-contacto textarea:focus {
+     outline: none;
+     border-color: #e6c44a;
+}
+
+/* Layout en página contacto (2 columnas) */
+.contenedor-columnas {
+     display: flex;
+     gap: 32px;
+     max-width: 1200px;
+     margin: 32px auto;
+     padding: 0 32px;
+     align-items: stretch;
+     /* Hace que las columnas tengan la misma altura */
+}
+
+/* Hace que .tarjeta y .contacto-preview compartan proporción */
+.tarjeta,
+.contacto-preview {
+     flex: 1;
+     display: flex;
+     flex-direction: column;
+}
+
+/* Estilos de botones generales */
+.btn {
+     display: inline-block;
+     padding: 10px 24px;
+     background: #c9a227;
+     color: #1a1612;
+     text-decoration: none;
+     border: none;
+     border-radius: 6px;
+     cursor: pointer;
+     font-family: inherit;
+     font-weight: bold;
+     transition: all 0.3s ease;
+}
+
+/* Efecto hover sobre botones */
+.btn:hover {
+     background: #e6c44a;
+     color: #1a1612;
+}
+
+.btn-enviar {
+     padding: 13px 32px;
+     /* Botón más grande para enviar */
+}
+
+/* Footer/pie de página */
+.footer {
+     text-align: center;
+     padding: 24px;
+     margin-top: 48px;
+     border-top: 2px solid #c9a227;
+     color: #8a8278;
+}
+
+/* Media query: estilos responsive para móviles y tablets */
+@media (max-width: 800px) {
+
+     /* Pila vertical para las tarjetas */
+     .tarjetas {
+          flex-direction: column;
+          gap: 20px;
+          padding: 0 8px;
+     }
+
+     /* Menú navbar responsivo */
+     .navbar ul {
+          flex-direction: column;
+          align-items: center;
+          gap: 8px;
+     }
+
+     /* Columnas a bloque (vertical) en contacto */
+     .contenedor-columnas {
+          display: block;
+          gap: 16px;
+          padding: 0 8px;
+     }
+
+     /* Secciones principales y de contacto adaptadas */
+     .principal,
+     .contacto-preview {
+          padding: 14px;
+          margin: 24px auto;
+          max-width: 95px;
+     }
+}

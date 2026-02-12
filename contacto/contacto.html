@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon del sitio -->
+    <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../.css/estilo.css">
+    <title>Mundo de las Mitologias</title>
+</head>
+<body>
+    <!-- CABECERA DEL SITIO -->
+    <!-- (El header y nav ya están en la sección original del body más abajo, evitamos duplicación) -->
+
+    <!-- CONTENIDO PRINCIPAL: Formulario de Contacto y Mapa de Google -->
+    <main>
+        <!-- Contenedor principal con dos columnas -->
+        <div class="contenedor-columnas">
+
+            <!-- Columna Izquierda: Imagen decorativa de Hermes -->
+            <div class="tarjeta">
+                <img src="../img/Hermes.png" alt="Imagen de Hermes mensajero de los dioses" class="img-hermes">
+            </div>
+
+            <!-- Columna Derecha: Formulario de contacto -->
+            <div class="contacto-preview">
+                <h2>Contacto</h2>
+                <p>Envíanos tus preguntas o comentarios</p>
+                <form class="formulario-contacto" action="#" method="post" autocomplete="on">
+                    <!-- Campo Nombre -->
+                    <div>
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    <!-- Campo Correo -->
+                    <div>
+                        <label for="correo">Correo Electrónico:</label>
+                        <input type="email" id="correo" name="correo" required>
+                    </div>
+                    <!-- Select: Motivo de contacto -->
+                    <div>
+                        <label for="motivo">Motivo de contacto:</label>
+                        <select id="motivo" name="motivo" required>
+                            <option value="" disabled selected>Selecciona un motivo</option>
+                            <option value="consulta">Consulta</option>
+                            <option value="comentario">Comentario</option>
+                            <option value="sugerencia">Sugerencia</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
+                    <!-- Radios: Preferencia de contacto -->
+                    <div>
+                        <span>¿Cómo prefieres ser contactado?</span>
+                        <div>
+                            <input type="radio" id="contacto-correo" name="preferencia" value="correo" required>
+                            <label for="contacto-correo">Correo Electrónico</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="contacto-telefono" name="preferencia" value="telefono">
+                            <label for="contacto-telefono">Teléfono</label>
+                        </div>
+                    </div>
+                    <!-- Checkbox: Aceptar términos -->
+                    <div>
+                        <input type="checkbox" id="acepto" name="acepto" required>
+                        <label for="acepto">Acepto los términos y condiciones</label>
+                    </div>
+                    <!-- Botón de envío -->
+                    <div>
+                        <button type="submit">Enviar</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+
+        <!-- Mapa de Google -->
+        <section class="seccion-mapa">
+            <h3>Ubicación</h3>
+            <div class="mapa-google" style="width:100%; max-width:600px; margin:auto;">
+                <!-- Reemplaza la src con la ubicación que desees si tienes una específica -->
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.8400277948766!2d-122.08424998469135!3d37.42206577982561!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb0b2aa374b57%3A0x99505463e99e36fc!2sGoogleplex!5e0!3m2!1ses!2ses!4v1714768321995!5m2!1ses!2ses" 
+                    width="100%" 
+                    height="300" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </section>
+    </main>
+
+<body>
+    <!-- CABECERA DEL SITIO -->
+    <header>
+        <!-- Título principal de la cabecera -->
+        <h1 class="titulo-principal">Mundo de las Mitologias</h1>
+        <!-- Logo del sitio -->
+        <div class="logo-header">
+            <img src="/img/favicon.png" alt="Logo Mundo de las Mitologias">
+        </div>
+        <!-- Íconos de las principales mitologías -->
+        <div class="iconos-header">
+            <div class="icono icono-griego" title="Mitologia Griega"></div>
+            <div class="icono icono-nordico" title="Mitologia Nordica"></div>
+            <div class="icono icono-egipcio" title="Mitologia Egipcia"></div>
+        </div>
+        <!-- Barra de navegación/menú principal -->
+        <nav class="navbar">
+            <ul>
+                <!-- Enlaces a las diferentes secciones del sitio -->
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../griega/griega.html">Mitologia Griega</a></li>
+                <li><a href="../nordica/nordica.html">Mitologia Nordica</a></li>
+                <li><a href="../egipcia/egipcia.html">Mitologia Egipcia</a></li>
+                <li><a href="contacto.html" class="activo">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL: Formulario de Contacto y Tarjeta de imagen -->
+    <main>
+        <!-- Contenedor con dos columnas: imagen a la izquierda y formulario a la derecha -->
+        <div class="contenedor-columnas">
+
+            <!-- Tarjeta izquierda: Imagen decorativa, relacionada con el contacto (Hermes) -->
+            <div class="tarjeta">
+                <img src="../img/Hermes.png" alt="Imagen" class="img-hermes">
+            </div>
+
+            <!-- Tarjeta derecha: Formulario de contacto -->
+            <div class="contacto-preview">
+                <h2>Contacto</h2>
+                <p>Envianos tus preguntas o comentarios</p>
+                <!-- Formulario para enviar nombre, correo y mensaje -->
+                <form class="formulario-contacto" action="#">
+                    <div>
+                        <!-- Campo para ingresar el nombre del usuario -->
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    <div>
+                        <!-- Campo para ingresar el correo electrónico -->
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div>
+                        <!-- Campo para ingresar el mensaje -->
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                    </div>
+                    <!-- Botón para enviar el formulario -->
+                    <button type="submit" class="btn btn-enviar">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- PIE DE PÁGINA: información de derechos de autor -->
+    <footer class="footer">
+        <p>&copy; Mundo de las Mitologias - Proyecto WEB</p>
+    </footer>
+</body>
+
+</html>
