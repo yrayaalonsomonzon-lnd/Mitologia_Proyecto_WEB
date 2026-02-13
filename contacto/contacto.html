@@ -29,12 +29,46 @@
                 <li><a href="../griega/griega.html">Mitologia Griega</a></li>
                 <li><a href="../nordica/nordica.html">Mitologia Nordica</a></li>
                 <li><a href="../egipcia/egipcia.html">Mitologia Egipcia</a></li>
-                <li><a href="contacto.html"class="activo">Contacto</a></li>
+                <li><a href="contacto.html" class="activo">Contacto</a></li>
             </ul>
         </nav>
     </header>
+
+    <main>
+        <div class="contacto-preview">
+            <h2>Contacto</h2>
+            <p>Envianos tus preguntas o comentarios</p>
+            <form class="formulario-contacto" action="#">
+                <div>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="pais">Pais</label>
+                    <select class="select-pais" id="pais" name="pais" required>
+                        <option value="es">España</option>
+                        <option value="mx">Mexico</option>
+                        <option value="co">Colombia</option>
+                        <option value="pe">Peru</option>
+                        <option value="ch">Chile</option>
+                        <option value="ar">Argentina</option>
+                        <option value="cl">Chile</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-enviar">Enviar</button>
+            </form>
+        </div>
+    </main>
     <footer class="footer">
-        <p>&copy; Mundo de las Mitologías - Proyecto WEB</p>
+        <p>&copy; Mundo de las Mitologias - Proyecto WEB</p>
     </footer>
 </body>
 

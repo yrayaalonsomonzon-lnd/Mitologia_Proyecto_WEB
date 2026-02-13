@@ -225,7 +225,7 @@ video {
      box-shadow: 0 4px 18px rgba(201, 162, 39, 0.15);
 }
 
-/* Sección Contacto (Página principal) */
+/* Sección Contacto (Página principal) / (Página contacto) */
 .contacto-preview {
      max-width: 600px;
      margin: 48px auto;
@@ -244,7 +244,7 @@ video {
      margin-bottom: 24px;
 }
 
-/* Formulario */
+/* Formulario de Contacto (Página principal) / (Página contacto) */
 .formulario-contacto {
      margin-bottom: 16px;
 }
@@ -272,6 +272,16 @@ video {
      border-color: #e6c44a;
 }
 
+/* Select Pais (Página contacto) */
+.select-pais {
+     width: 100%;
+     padding: 10px;
+     background: #1a1612;
+     border: 2px solid #c9a227;
+     border-radius: 4px;
+     color: #e8e4df;
+}
+
 .contenedor-columnas {
      display: grid;
      grid-template-columns: 1fr 280px;
@@ -281,7 +291,7 @@ video {
      padding: 0 32px;
 }
 
-/* Botones */
+/* Botones (Página principal) / (Página contacto) */
 .btn {
      display: inline-block;
      padding: 10px 24px;
@@ -305,7 +315,7 @@ video {
      padding: 13px 32px;
 }
 
-/* Footer */
+     /* Footer */
 .footer {
      text-align: center;
      padding: 24px;
