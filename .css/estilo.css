@@ -1,43 +1,39 @@
-/* Reset de estilos globales */
+/* RESET GLOBAL */
 * {
      margin: 0;
      padding: 0;
      box-sizing: border-box;
 }
 
-/* Fuentes personalizadas del proyecto Descargadas de https://www.dafont.com/es/ */
+/* FUENTES PERSONALIZADAS */
 @font-face {
      font-family: 'A_mano_regular_old';
      src: url('../font/amanoregulold/AManoRegulold.woff2') format('woff2');
 }
 
 @font-face {
-     font-family: 'Stranger_Things';
-     src: url('../font/stranger_things/StrangerThings-Regular.woff2') format('woff2');
+    font-family: 'Stranger_Things';
+    src: url('../font/stranger_things/StrangerThings-Regular.woff2') format('woff2');
 }
 
-/* Estilos generales del body */
+/* ESTILO GENERAL DEL BODY */
 body {
-     font-family: 'A_mano_regular_old';
-     /* Fuente custom */
+     font-family: 'A_mano_regular_old', 'Stranger_Things';
      background: #1a1612;
-     /* Fondo oscuro */
      color: #e8e4df;
-     /* Texto claro */
      line-height: 1.6;
-     /* Espaciado entre líneas */
 }
 
-/* Cabecera del sitio */
+/* CABECERA */
 header {
-     background: #2d2620;
-     padding: 24px 32px;
-     text-align: center;
-     /* Sombra para separar visualmente el header */
-     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+    background: #2d2620;
+    padding: 24px 32px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.4);
+    position: relative;
 }
 
-/* Logo principal en el header */
+/* LOGO */
 .logo-header {
      position: absolute;
      top: 24px;
@@ -48,17 +44,16 @@ header {
      width: 100px;
      height: 100px;
      border-radius: 20%;
-     /* Bordes redondeados */
 }
 
-/* Título grande del proyecto */
+/* TÍTULO PRINCIPAL */
 .titulo-principal {
-     font-family: 'Stranger_Things';
+     font-family: 'Stranger_Things', Impact, sans-serif;
      font-size: 35px;
      color: #c9a227;
 }
 
-/* Iconos de mitologías en cabecera */
+/* ICONOS CABECERA */
 .iconos-header {
      display: flex;
      justify-content: center;
@@ -66,7 +61,7 @@ header {
      margin: 16px 0 24px;
 }
 
-/* Decoración base de iconos */
+/* Icono individual, efecto hover: sombra dorada */
 .icono {
      width: 60px;
      height: 60px;
@@ -75,14 +70,13 @@ header {
      background-size: contain;
      background-repeat: no-repeat;
      background-position: center;
+     transition: box-shadow 0.2s;
 }
-
-/* Efecto hover sobre iconos */
 .icono:hover {
-     box-shadow: 0 8px 20px rgba(201, 162, 39, 0.2);
+    box-shadow: 0 8px 20px rgba(201,162,39,0.2);
 }
 
-/* Imágenes específicas por tipo de mitología */
+/* Iconos según mitología */
 .icono-griego {
      background-image: url('../img/griego.png');
 }
@@ -95,9 +89,8 @@ header {
      background-image: url('../img/egipcio.png');
 }
 
-/* Menú de navegación principal */
+/* MENU PRINCIPAL */
 .navbar {
-     /* Línea decorativa superior */
      border-top: 2px solid #c9a227;
      padding-top: 16px;
 }
@@ -115,23 +108,22 @@ header {
      padding: 8px 16px;
      margin: 0 3px;
      border: 1px solid transparent;
-     transition: all 0.3s ease;
+     transition: color 0.3s, border-color 0.3s;
 }
 
-/* Efecto hover en los enlaces del navbar */
 .navbar a:hover {
      color: #e6c44a;
      border-color: #c9a227;
 }
 
-/* Resalta la página activa en el navbar */
+/* Enlace activo del menú, marcado con subrayado dorado */
 .navbar a.activo {
      color: #c9a227;
      font-weight: bold;
      border-bottom: 2px solid #c9a227;
 }
 
-/* Sección principal (página de inicio) */
+/* PRINCIPAL (HOME) */
 .principal {
      max-width: 900px;
      margin: 48px auto;
@@ -151,7 +143,7 @@ header {
      font-size: 18px;
 }
 
-/* Imagen decorativa (página contacto) */
+/* ========== IMAGEN CONTACTO ========== */
 .img-hermes {
      width: 100%;
      height: 100%;
@@ -159,7 +151,7 @@ header {
      border-radius: 6px;
 }
 
-/* Tarjetas de mitologías generales */
+/* TARJETAS DE MITOLOGÍAS */
 .tarjetas {
      display: flex;
      gap: 32px;
@@ -168,7 +160,6 @@ header {
      padding: 0 32px;
 }
 
-/* Tarjeta individual */
 .tarjeta {
      flex: 1 1 280px;
      background: #2d2620;
@@ -176,12 +167,11 @@ header {
      border-radius: 8px;
      padding: 24px;
      text-align: center;
-     transition: all 0.3s ease;
+     transition: box-shadow 0.3s;
 }
 
-/* Efecto hover en la tarjeta */
 .tarjeta:hover {
-     box-shadow: 0 8px 20px rgba(201, 162, 39, 0.2);
+    box-shadow: 0 8px 20px rgba(201,162,39,0.2);
 }
 
 .tarjeta h3 {
@@ -190,7 +180,6 @@ header {
      font-size: 21px;
 }
 
-/* Imagen dentro de la tarjeta */
 .tarjeta-img {
      height: 180px;
      margin: 16px 0;
@@ -201,32 +190,27 @@ header {
      color: #8a8278;
 }
 
-/* Imágenes distintas por tarjeta */
-.tarjeta-griega {
-     background-image: url(../img/Griega.png);
+/* Fondo de cada tarjeta según tipo de mitología */
+.tarjeta-griega,
+.tarjeta-nordica,
+.tarjeta-egipcia {
      background-size: contain;
      background-repeat: no-repeat;
      background-position: center;
      border: 2px solid #c9a227;
      border-radius: 8px;
+}
+
+.tarjeta-griega {
+     background-image: url(../img/Griega.png);
 }
 
 .tarjeta-nordica {
      background-image: url(../img/Nordica.png);
-     background-size: contain;
-     background-repeat: no-repeat;
-     background-position: center;
-     border: 2px solid #c9a227;
-     border-radius: 8px;
 }
 
 .tarjeta-egipcia {
      background-image: url(../img/Egipcia.png);
-     background-size: contain;
-     background-repeat: no-repeat;
-     background-position: center;
-     border: 2px solid #c9a227;
-     border-radius: 8px;
 }
 
 .tarjeta p {
@@ -234,7 +218,92 @@ header {
      color: #e8e4df;
 }
 
-/* Video-banner principal */
+/* ========== TARJETA HERMES (CONTACTO) ========== */
+/* Tarjeta especial para sección de contacto */
+.tarjeta-hermes {
+     width: 100%;
+     max-width: none;
+     margin: 48px 0;
+     padding: 32px;
+     background: #2d2620;
+     border-radius: 8px;
+     border: 1px solid #c9a227;
+     transition: box-shadow 0.3s;
+     text-align: center;
+     font-size: 0.95em;
+}
+
+.tarjeta-hermes:hover {
+     box-shadow: 0 8px 20px rgba(201, 162, 39, 0.2);
+}
+
+/* ========== MAPA DE CONTACTO ========== */
+.mapa-contacto {
+    width: 90%;
+    max-width: 800px;
+    min-width: 280px;
+    background: #2d2620;
+    border: 1px solid #c9a227;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(201, 162, 39, 0.13);
+    margin: 32px auto 0 auto;
+    padding: 24px 16px;
+    text-align: center;
+}
+
+.mapa-contacto iframe {
+    width: 100%;
+    height: 275px;
+    border: 0;
+    border-radius: 7px;
+    box-shadow: 0 4px 20px rgba(201, 162, 39, 0.16);
+    margin: 0 auto;
+    display: block;
+    transition: box-shadow 0.2s;
+}
+
+.mapa-contacto iframe:focus {
+    box-shadow: 0 0 0 3px #e6c44a;
+    outline: none;
+}
+
+/* ========== LEYENDA DEL MAPA (CONTACTO) ========== */
+.leyenda {
+    max-width: 500px;
+    margin: 25px auto 0 auto;
+    background: #2d2620;
+    border: 1px solid #c9a227;
+    border-radius: 8px;
+    padding: 20px 22px;
+    color: #e8e4df;
+    box-shadow: 0 4px 12px rgba(201, 162, 39, 0.08);
+    font-size: 1em;
+}
+
+.leyenda strong {
+    font-size: 1.14em;
+    color: #c9a227;
+    display: block;
+    margin-bottom: 8px;
+    letter-spacing: 1px;
+}
+
+.leyenda ul {
+    list-style-type: disc;
+    margin: 0 0 0 20px;
+    padding: 0;
+}
+
+.leyenda li {
+    margin-bottom: 6px;
+}
+
+.leyenda li span {
+    font-weight: bold;
+    color: #e5cd78;
+}
+
+/* ========== VIDEO BANNER PRINCIPAL ========== */
 video {
      max-width: 100%;
      height: auto;
@@ -244,17 +313,96 @@ video {
      box-shadow: 0 4px 18px rgba(201, 162, 39, 0.15);
 }
 
-/* Sección Contacto general (background y layout) */
+/* ========== FORMULARIO DE CONTACTO ========== */
+/* Espaciado entre formularios y elementos */
+.formulario-contacto {
+     margin-bottom: 16px;
+}
+
+.formulario-contacto>div {
+     margin-bottom: 18px;
+}
+
+.formulario-contacto label {
+     display: block;
+     margin-bottom: 5px;
+     color: #c9a227;
+}
+
+/* Inputs y textarea personalizados al estilo del sitio */
+.formulario-contacto input,
+.formulario-contacto textarea {
+     width: 100%;
+     padding: 10px;
+     background: #1a1612;
+     border: 2px solid #c9a227;
+     border-radius: 4px;
+     color: #e8e4df;
+     font-family: inherit;
+}
+
+.formulario-contacto input:focus,
+.formulario-contacto textarea:focus {
+     outline: none;
+     border-color: #e6c44a;
+}
+
+.formulario-contacto select {
+     width: 100%;
+     padding: 10px;
+     background: #1a1612;
+     border: 2px solid #c9a227;
+     border-radius: 6px;
+     color: #e8e4df;
+     font-family: inherit;
+     font-size: 1em;
+     transition: border-color 0.2s;
+}
+
+/* Foco en select: borde clarito */
+.formulario-contacto select:focus {
+     border-color: #e8e4df;
+     outline: none;
+}
+
+.formulario-contacto option {
+     background: #2d2620;
+     color: #e8e4df;
+}
+
+/* Radios especiales mitologías dentro del formulario */
+.formulario-contacto .grupo-mitologia {
+     display: flex;
+     gap: 20px;
+     margin-top: 6px;
+     margin-bottom: 2px;
+}
+
+.formulario-contacto .grupo-mitologia label {
+     display: flex;
+     align-items: center;
+     gap: 6px;
+     background: #1a1612;
+     padding: 6px 12px;
+     border: 1.5px solid #c9a227;
+     border-radius: 6px;
+     color: #e8e4df;
+     cursor: pointer;
+     font-size: 1em;
+}
+
+/* ========== SECCIÓN DE CONTACTO USER ========== */
 .contacto-preview {
-     max-width: 600px;
-     margin: 48px auto;
+     width: 100%;
+     max-width: none;
+     margin: 48px 0;
      padding: 32px;
      background: #2d2620;
      border-radius: 8px;
      border: 1px solid #c9a227;
+     transition: box-shadow 0.3s;
 }
 
-/* Sombra al pasar el mouse por la tarjeta de contacto */
 .contacto-preview:hover {
      box-shadow: 0 8px 20px rgba(201, 162, 39, 0.2);
 }
@@ -268,57 +416,17 @@ video {
      margin-bottom: 24px;
 }
 
-/* Formulario de contacto */
-.formulario-contacto {
-     margin-bottom: 16px;
-}
-
-/* Etiquetas de los campos */
-.formulario-contacto label {
-     display: block;
-     margin-bottom: 5px;
-     color: #c9a227;
-}
-
-/* Campos de entrada y área de texto */
-.formulario-contacto input,
-.formulario-contacto textarea {
-     width: 100%;
-     padding: 10px;
-     background: #1a1612;
-     border: 2px solid #c9a227;
-     border-radius: 4px;
-     color: #e8e4df;
-     font-family: inherit;
-}
-
-/* Efecto de foco: resalta el borde */
-.formulario-contacto input:focus,
-.formulario-contacto textarea:focus {
-     outline: none;
-     border-color: #e6c44a;
-}
-
-/* Layout en página contacto (2 columnas) */
+/* COLUMNAS CONTACTO */
 .contenedor-columnas {
      display: flex;
      gap: 32px;
      max-width: 1200px;
      margin: 32px auto;
      padding: 0 32px;
-     align-items: stretch;
-     /* Hace que las columnas tengan la misma altura */
+     align-items: stretch; /* Iguala altura columnas */
 }
 
-/* Hace que .tarjeta y .contacto-preview compartan proporción */
-.tarjeta,
-.contacto-preview {
-     flex: 1;
-     display: flex;
-     flex-direction: column;
-}
-
-/* Estilos de botones generales */
+/* BOTONES GENERALES */
 .btn {
      display: inline-block;
      padding: 10px 24px;
@@ -330,10 +438,10 @@ video {
      cursor: pointer;
      font-family: inherit;
      font-weight: bold;
-     transition: all 0.3s ease;
+     transition: background 0.3s, color 0.3s;
 }
 
-/* Efecto hover sobre botones */
+/* Hover en botón: destaca dorado claro */
 .btn:hover {
      background: #e6c44a;
      color: #1a1612;
@@ -341,10 +449,9 @@ video {
 
 .btn-enviar {
      padding: 13px 32px;
-     /* Botón más grande para enviar */
 }
 
-/* Footer/pie de página */
+/* ========== FOOTER ========== */
 .footer {
      text-align: center;
      padding: 24px;
@@ -353,35 +460,54 @@ video {
      color: #8a8278;
 }
 
-/* Media query: estilos responsive para móviles y tablets */
+/* RESPONSIVE: MOBILE Y TABLET */
 @media (max-width: 800px) {
-
-     /* Pila vertical para las tarjetas */
-     .tarjetas {
-          flex-direction: column;
-          gap: 20px;
-          padding: 0 8px;
-     }
-
-     /* Menú navbar responsivo */
-     .navbar ul {
-          flex-direction: column;
-          align-items: center;
-          gap: 8px;
-     }
-
-     /* Columnas a bloque (vertical) en contacto */
-     .contenedor-columnas {
-          display: block;
-          gap: 16px;
-          padding: 0 8px;
-     }
-
-     /* Secciones principales y de contacto adaptadas */
-     .principal,
-     .contacto-preview {
-          padding: 14px;
-          margin: 24px auto;
-          max-width: 95px;
-     }
+    .tarjetas {
+        flex-direction: column;
+        gap: 20px;
+        padding: 0 8px;
+    }
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+    }
+    .contenedor-columnas {
+        display: block;
+        gap: 16px;
+        padding: 0 8px;
+    }
+    .principal,
+    .contacto-preview {
+        padding: 14px;
+        margin: 24px auto;
+        max-width: 95vw;
+    }
 }
+
+/* ========== RESPONSIVE LEYENDA/MAPA CONTACTO ========== */
+@media (max-width: 600px) {
+
+     /* LEYENDA */
+     .leyenda {
+         max-width: 97%;
+         padding: 11px 7px;
+         font-size: 0.98em;
+     }
+ 
+     .leyenda strong {
+         font-size: 1.09em;
+     }
+ 
+     /* MAPA CONTACTO */
+     .mapa-contacto {
+         width: 98%;
+         min-width: 0;
+         padding: 12px 5px;
+     }
+ 
+     .mapa-contacto iframe {
+         height: 180px;
+         border-radius: 5px;
+     }
+ } 
