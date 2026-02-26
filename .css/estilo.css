@@ -12,11 +12,14 @@
 }
 
 @font-face {
-    font-family: 'Stranger_Things';
-    src: url('../font/stranger_things/StrangerThings-Regular.woff2') format('woff2');
+     font-family: 'Stranger_Things';
+     src: url('../font/stranger_things/StrangerThings-Regular.woff2') format('woff2');
 }
 
-/* ESTILO GENERAL DEL BODY */
+/* ============================== ESTILO GLOBAL ==============================*/
+
+/* ESTILO DEL BODY */
+
 body {
      font-family: 'A_mano_regular_old', 'Stranger_Things';
      background: #1a1612;
@@ -25,15 +28,17 @@ body {
 }
 
 /* CABECERA */
+
 header {
-    background: #2d2620;
-    padding: 24px 32px;
-    text-align: center;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.4);
-    position: relative;
+     background: #2d2620;
+     padding: 24px 32px;
+     text-align: center;
+     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+     position: relative;
 }
 
 /* LOGO */
+
 .logo-header {
      position: absolute;
      top: 24px;
@@ -47,6 +52,7 @@ header {
 }
 
 /* TÍTULO PRINCIPAL */
+
 .titulo-principal {
      font-family: 'Stranger_Things', Impact, sans-serif;
      font-size: 35px;
@@ -54,6 +60,7 @@ header {
 }
 
 /* ICONOS CABECERA */
+
 .iconos-header {
      display: flex;
      justify-content: center;
@@ -61,7 +68,8 @@ header {
      margin: 16px 0 24px;
 }
 
-/* Icono individual */
+/* ICONOS */
+
 .icono {
      width: 60px;
      height: 60px;
@@ -72,8 +80,9 @@ header {
      background-position: center;
      transition: box-shadow 0.2s;
 }
+
 .icono:hover {
-    box-shadow: 0 8px 20px rgba(201,162,39,0.2);
+     box-shadow: 0 8px 20px rgba(201, 162, 39, 0.2);
 }
 
 /* Iconos según mitología */
@@ -90,6 +99,7 @@ header {
 }
 
 /* MENU PRINCIPAL */
+
 .navbar {
      border-top: 2px solid #c9a227;
      padding-top: 16px;
@@ -116,14 +126,17 @@ header {
      border-color: #c9a227;
 }
 
-/* Enlace activo del menú, marcado con subrayado dorado */
+/* Enlace activo del menú, marcado con subrayado en dorado */
 .navbar a.activo {
      color: #c9a227;
      font-weight: bold;
      border-bottom: 2px solid #c9a227;
 }
 
-/* PRINCIPAL (HOME) */
+/* ============================== PAGINA PRINCIPAL (HOME) ==============================*/
+
+/* CONTENIDO PRINCIPAL */
+
 .principal {
      max-width: 900px;
      margin: 48px auto;
@@ -143,7 +156,8 @@ header {
      font-size: 18px;
 }
 
-/* ========== IMAGEN CONTACTO ========== */
+/* IMAGEN CONTACTO */
+
 .img-hermes {
      width: 100%;
      height: 100%;
@@ -152,6 +166,7 @@ header {
 }
 
 /* TARJETAS DE MITOLOGÍAS */
+
 .tarjetas {
      display: flex;
      gap: 32px;
@@ -171,7 +186,7 @@ header {
 }
 
 .tarjeta:hover {
-    box-shadow: 0 8px 20px rgba(201,162,39,0.2);
+     box-shadow: 0 8px 20px rgba(201, 162, 39, 0.2);
 }
 
 .tarjeta h3 {
@@ -218,8 +233,10 @@ header {
      color: #e8e4df;
 }
 
-/* ========== TARJETA HERMES (CONTACTO) ========== */
-/* Tarjeta especial para sección de contacto */
+/* ============================== PAGINA CONTACTO ==============================*/
+
+/* TARJETA SECCION CONTACTO */
+
 .tarjeta-hermes {
      width: 100%;
      max-width: none;
@@ -237,151 +254,186 @@ header {
      box-shadow: 0 8px 20px rgba(201, 162, 39, 0.2);
 }
 
-/* ========== MAPA DE CONTACTO ========== */
+/* MAPA DE CONTACTO */
+
 .mapa-contacto {
-    width: 90%;
-    max-width: 800px;
-    min-width: 280px;
-    background: #2d2620;
-    border: 1px solid #c9a227;
-    border-radius: 10px;
-    box-shadow: 0 4px 20px rgba(201, 162, 39, 0.13);
-    margin: 32px auto 0 auto;
-    padding: 24px 16px;
-    text-align: center;
+     width: 90%;
+     max-width: 800px;
+     min-width: 280px;
+     background: #2d2620;
+     border: 1px solid #c9a227;
+     border-radius: 10px;
+     box-shadow: 0 4px 20px rgba(201, 162, 39, 0.13);
+     margin: 32px auto 0 auto;
+     padding: 24px 16px;
+     text-align: center;
 }
 
 .mapa-contacto iframe {
-    width: 100%;
-    height: 275px;
-    border: 0;
-    border-radius: 7px;
-    box-shadow: 0 4px 20px rgba(201, 162, 39, 0.16);
-    margin: 0 auto;
-    display: block;
-    transition: box-shadow 0.2s;
+     width: 100%;
+     height: 275px;
+     border: 0;
+     border-radius: 7px;
+     box-shadow: 0 4px 20px rgba(201, 162, 39, 0.16);
+     margin: 0 auto;
+     display: block;
+     transition: box-shadow 0.2s;
 }
 
 .mapa-contacto iframe:focus {
-    box-shadow: 0 0 0 3px #e6c44a;
-    outline: none;
+     box-shadow: 0 0 0 3px #e6c44a;
+     outline: none;
 }
 
-/* ========== LEYENDA DEL MAPA (CONTACTO) ========== */
+/* LEYENDA DEL MAPA (CONTACTO) */
+
 .leyenda {
-    max-width: 500px;
-    margin: 25px auto 0 auto;
-    background: #2d2620;
-    border: 1px solid #c9a227;
-    border-radius: 8px;
-    padding: 20px 22px;
-    color: #e8e4df;
-    box-shadow: 0 4px 12px rgba(201, 162, 39, 0.08);
-    font-size: 1em;
+     max-width: 500px;
+     margin: 25px auto 0 auto;
+     background: #2d2620;
+     border: 1px solid #c9a227;
+     border-radius: 8px;
+     padding: 20px 22px;
+     color: #e8e4df;
+     box-shadow: 0 4px 12px rgba(201, 162, 39, 0.08);
+     font-size: 1em;
 }
 
 .leyenda strong {
-    font-size: 1.14em;
-    color: #c9a227;
-    display: block;
-    margin-bottom: 8px;
-    letter-spacing: 1px;
+     font-size: 1.14em;
+     color: #c9a227;
+     display: block;
+     margin-bottom: 8px;
+     letter-spacing: 1px;
 }
 
 .leyenda ul {
-    list-style-type: disc;
-    margin: 0 0 0 20px;
-    padding: 0;
+     list-style-type: disc;
+     margin: 0 0 0 20px;
+     padding: 0;
 }
 
 .leyenda li {
-    margin-bottom: 6px;
+     margin-bottom: 6px;
 }
 
 .leyenda li span {
-    font-weight: bold;
-    color: #e5cd78;
+     font-weight: bold;
+     color: #e5cd78;
 }
 
-/* Carrusel */
+/* ============================== PAGINA MITOLOGIAS ==============================*/
+
+/* CARRUSEL */
+
 .slider {
-    display: flex;
-    overflow-x: auto;
-    gap: 32px;
-    margin: 0 auto 32px;
-    padding: 0;
-    max-width: 950px;
-    list-style: none;
-    scrollbar-color: #c9a227 #2d2620;
-    position: relative;
+     display: flex;
+     /* scrollbar en slider */
+     overflow-x: auto;
+     gap: 18px;
+     margin: 0 auto 30px;
+     padding: 0;
+     max-width: 960px;
+     scrollbar-color: #c9a227 #2d2620;
 }
 
 .slider li {
-    background: #2d2620;
-    border: 2px solid #c9a227;
-    border-radius: 14px;
-    min-width: 320px;
-    max-width: 380px;
-    flex: 0 0 auto;
-    box-shadow: 0 4px 16px rgba(201,162,39,0.11);
-    padding: 22px 18px;
-    margin-right: 8px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+     flex: 0 0 auto;
+     display: flex;
+     flex-direction: column;
+     background: #2d2620;
+     border: 2px solid #c9a227;
+     border-radius: 18px;
+     max-width: 400px;
+     box-shadow: 0 6px 24px rgba(201, 162, 39, 0.15);
+     padding: 38px 32px;
+     margin-right: 16px;
+     align-items: center;
 }
+
 .slider li img {
-    width: 120px;
-    height: 120px;
-    border-radius: 12px;
-    margin-bottom: 10px;
-    border: 2px solid #e5cd78;
-    background: #332b21;
-    box-shadow: 0 2px 7px rgba(201,162,39,0.10);
+     width: 200px;
+     height: 200px;
+     border-radius: 16px;
+     margin-bottom: 18px;
+     border: 3px solid #e5cd78;
+     background: #332b21;
+     box-shadow: 0 3px 10px rgba(201, 162, 39, 0.13);
 }
+
 .slider li p {
-    margin: 0;
-    font-size: 1em;
-    color: #e8e4df;
-    text-align: center;
+     margin: 0;
+     color: #e8e4df;
+     text-align: justify;
 }
 
-/* Barra navegación simple carrusel */
-.menu_carrusel {
-    display: flex;
-    justify-content: center;
-    gap: 14px;
-    margin: 24px auto 0;
-    background: #211c11;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(201,162,39,0.05);
-    max-width: 340px;
-    list-style: none;
-    padding: 0;
+h2 {
+     margin-left: auto;
+     margin-right: auto;
+     text-align: center;
+     margin-bottom: 60px;
 }
-.menu_carrusel li a {
-    display: inline-block;
-    padding: 3px;
-    border-radius: 7px;
-    border: 2px solid transparent;
-    background: #312a20;
+
+/* CONTENIDO PAGINA MITOLOGIA */
+
+h3 {
+     margin-left: auto;
+     margin-right: auto;
+     text-align: center;
+     margin-bottom: 60px;
 }
-.menu_carrusel li a:focus,
-.menu_carrusel li a:hover {
-    border: 2px solid #c9a227;
-    background: #23201e;
+
+.dioses {
+     display: flex;
+     flex-wrap: wrap;
+     margin: 30px 0 0 0;
+     padding: 20px 0;
+     justify-content: center;
+     gap: 24px;
 }
-.menu_carrusel img {
-    width: 38px;
-    height: 38px;
-    border-radius: 7px;
-    border: 2px solid #e5cd78;
-    background: #332b21;
-    box-shadow: 0 1px 4px rgba(201,162,39,0.08);
+
+.dioses div {
+     width: 50%;
+     min-width: 300px;
+     max-width: 450px;
+     background: #271f15;
+     border-radius: 8px;
+     padding: 20px;
+     border: 1px solid #c9a227;
+     margin-bottom: 0;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+}
+
+.dioses div h3 {
+     color: #c9a227;
+     margin-bottom: 10px;
+     margin-top: 0;
+     text-align: center;
+}
+
+.dioses div img {
+     width: 80%;
+     height: 280px;
+     border: 1px solid #c9a227;
+     margin-bottom: 12px;
+     margin-top: 2px;
+     border-radius: 8px;
+     background: #332b21;
 }
 
 
-/* ========== VIDEO BANNER PRINCIPAL ========== */
+.dioses div p {
+     color: #e8e4df;
+     font-size: 1em;
+     text-align: justify;
+     margin: 0;
+     line-height: 1.5;
+}
+
+/* ============================== VIDEO BANNER PRINCIPAL ==============================*/
+
 video {
      max-width: 100%;
      height: auto;
@@ -391,7 +443,8 @@ video {
      box-shadow: 0 4px 18px rgba(201, 162, 39, 0.15);
 }
 
-/* ========== FORMULARIO DE CONTACTO ========== */
+/* ============================== FORMULARIO CONTACTO ==============================*/
+
 /* Espaciado entre formularios y elementos */
 .formulario-contacto {
      margin-bottom: 16px;
@@ -469,7 +522,8 @@ video {
      font-size: 1em;
 }
 
-/* ========== SECCIÓN DE CONTACTO USER ========== */
+/* ============================== PAGINA CONTACTO ==============================*/
+
 .contacto-preview {
      width: 100%;
      max-width: none;
@@ -495,16 +549,19 @@ video {
 }
 
 /* COLUMNAS CONTACTO */
+
 .contenedor-columnas {
      display: flex;
      gap: 32px;
      max-width: 1200px;
      margin: 32px auto;
      padding: 0 32px;
-     align-items: stretch; /* Iguala altura columnas */
+     align-items: stretch;
+     /* Iguala altura columnas */
 }
 
-/* BOTONES GENERALES */
+/* BOTONES */
+
 .btn {
      display: inline-block;
      padding: 10px 24px;
@@ -529,8 +586,9 @@ video {
      padding: 13px 32px;
 }
 
-/* ========== FOOTER ========== */
-.footer {
+/* ============================== FOOTER ==============================*/
+
+footer {
      text-align: center;
      padding: 24px;
      margin-top: 48px;
@@ -538,54 +596,77 @@ video {
      color: #8a8278;
 }
 
-/* RESPONSIVE: MOBILE Y TABLET */
+/* ============================== MEDIA QUERRYS ==============================*/
+
+/* MEDIA QUERRY PAGINA MITOLOGIA */
+
 @media (max-width: 800px) {
-    .tarjetas {
-        flex-direction: column;
-        gap: 20px;
-        padding: 0 8px;
-    }
-    .navbar ul {
-        flex-direction: column;
-        align-items: center;
-        gap: 8px;
-    }
-    .contenedor-columnas {
-        display: block;
-        gap: 16px;
-        padding: 0 8px;
-    }
-    .principal,
-    .contacto-preview {
-        padding: 14px;
-        margin: 24px auto;
-        max-width: 95vw;
-    }
+     .tarjetas {
+          flex-direction: column;
+          gap: 20px;
+          padding: 0 8px;
+     }
+
+     .navbar ul {
+          flex-direction: column;
+          align-items: center;
+          gap: 8px;
+     }
+
+     .contenedor-columnas {
+          display: block;
+          gap: 16px;
+          padding: 0 8px;
+     }
+
+     .principal,
+     .contacto-preview {
+          padding: 14px;
+          margin: 24px auto;
+          max-width: 95vw;
+     }
 }
 
-/* ========== RESPONSIVE LEYENDA/MAPA CONTACTO ========== */
+/* MEDIA QUERRY MAPA CONTACTO */
+
 @media (max-width: 600px) {
 
      /* LEYENDA */
      .leyenda {
-         max-width: 97%;
-         padding: 11px 7px;
-         font-size: 0.98em;
+          max-width: 97%;
+          padding: 11px 7px;
+          font-size: 0.98em;
      }
- 
+
      .leyenda strong {
-         font-size: 1.09em;
+          font-size: 1.09em;
      }
- 
+
      /* MAPA CONTACTO */
      .mapa-contacto {
-         width: 98%;
-         min-width: 0;
-         padding: 12px 5px;
+          width: 98%;
+          min-width: 0;
+          padding: 12px 5px;
      }
- 
+
      .mapa-contacto iframe {
-         height: 180px;
-         border-radius: 5px;
+          height: 180px;
+          border-radius: 5px;
      }
- } 
+}
+
+/* MEDIA QUERRY PAGINA MITOLOGIA */
+
+@media (max-width: 850px) {
+     .dioses {
+          flex-direction: column;
+          gap: 18px;
+          padding: 24px 6px;
+     }
+
+     .dioses div {
+          width: 100%;
+          max-width: none;
+          min-width: 0;
+     }
+}
